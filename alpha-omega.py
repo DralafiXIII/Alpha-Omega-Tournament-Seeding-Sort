@@ -32,7 +32,7 @@ for i in range(twoN - len(seedsSorted)):
 print(seedsSorted)
 
 # Alpha-omega sorting algorithm
-for i in range(twoN2): # <-- There's still something wrong here
+for i in range(twoN2):
     temp = []
     for j in range(0,int(len(seedsSorted) / 2),2**i):
         for k in range(2**i):
