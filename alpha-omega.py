@@ -22,9 +22,21 @@ for i in range(1, len(seedsSorted)):
         twoN = temp
         break
 
-print(seedsSorted[len(seedsSorted) - 1])
+for i in range(twoN - len(seedsSorted)):
+    seedsSorted.append([seedsSorted[len(seedsSorted) - 1][0] + 1, "BYE"])
 
-for i in range(0,twoN - len(seedsSorted)):
-    seedsSorted.append([seedsSorted[len(seedsSorted) - 1][0] + i, "BYE"])
+temp = seedsSorted
+
+"""
+1
+8
+4
+5
+2
+7
+3
+6
+
+"""
 
 print(seedsSorted)
