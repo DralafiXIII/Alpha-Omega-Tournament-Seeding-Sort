@@ -4,14 +4,17 @@
 import math
 
 # Creates a list of teams
+
+numSeeds = 30 # number of initial seeds
+
 seeds = []
-for i in range(33):
+for i in range(numSeeds):
     seeds.append([i + 1,""])
 
+# Sorts list of teams. Necessary when the list is generated manually.
 def keyGet(seeds):
     return seeds[0]
 
-# Sorts list of teams. Necessary when the list is generated manually.
 seedsSorted = sorted(seeds, key=keyGet)
 
 # Generates byes
